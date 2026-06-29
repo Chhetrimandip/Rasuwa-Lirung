@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-brand-red: #8B261E;
+  --color-brand-gold: #D4AF37;
+  --color-brand-green: #1B4332;
+  --color-brand-cream: #FAF8F5;
+  --color-brand-charcoal: #2D2A26;
+  --color-border-bento: #E8E2D9;
+}
+
+/* Custom styles for smooth transitions and radial backgrounds */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-brand-cream);
+  color: var(--color-brand-charcoal);
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: #E2DCD0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4BCAE;
+}
+
+/* Brass metallic gradient style */
+.brass-shine {
+  background: radial-gradient(circle, #E5C158 0%, #C59B27 40%, #8E6A0D 80%, #5C4300 100%);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.4), 
+              0 10px 25px -5px rgba(0, 0, 0, 0.3), 
+              0 8px 10px -6px rgba(0, 0, 0, 0.3);
+}
+
+.brass-bowl {
+  background: radial-gradient(circle, #ECC94B 0%, #B7791F 70%, #744210 100%);
+  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.5), 
+              0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Bento card effect */
+.bento-card {
+  background-color: #ffffff;
+  border: 1px solid var(--color-border-bento);
+  border-radius: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.bento-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.05);
+}
+
