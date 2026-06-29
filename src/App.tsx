@@ -70,7 +70,7 @@ export default function App() {
       <Navbar cartCount={cartCount} onOpenCart={() => setIsCartOpen(true)} />
 
       {/* 1. DYNAMIC ROTATING DAL BHAT THALI HERO EXPERIENCE */}
-      {/* <ThaliHero /> */}
+      <ThaliHero />
 
       {/* 2. SOURCING STORY: SPICES DIRECT FROM RASUWA */}
       <section id="sourcing-story" className="py-24 px-4 bg-white border-b border-border-bento relative overflow-hidden">
