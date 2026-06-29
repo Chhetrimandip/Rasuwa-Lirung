@@ -30,6 +30,7 @@ export default function ThaliHero() {
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  //just for deploying added comment
 
   const selectedItem = THALI_HOTSPOTS.find(item => item.id === selectedId) || THALI_HOTSPOTS[0];
 
@@ -237,8 +238,8 @@ export default function ThaliHero() {
                     key={hotspot.id}
                     onClick={() => setSelectedId(hotspot.id)}
                     className={`px-3 py-1.5 rounded-full text-[9px] font-bold uppercase tracking-wider transition-all border ${selectedId === hotspot.id
-                        ? 'bg-brand-red border-brand-red text-white shadow-sm'
-                        : 'bg-stone-50 border-border-bento text-gray-500 hover:bg-[#F2ECE1] hover:text-brand-charcoal'
+                      ? 'bg-brand-red border-brand-red text-white shadow-sm'
+                      : 'bg-stone-50 border-border-bento text-gray-500 hover:bg-[#F2ECE1] hover:text-brand-charcoal'
                       }`}
                   >
                     {hotspot.name.split(' ')[hotspot.name.split(' ').length - 1]}
@@ -305,14 +306,14 @@ export default function ThaliHero() {
                     >
                       {/* Glowing highlight ring */}
                       <span className={`absolute -inset-4 rounded-full bg-white/20 transition-all duration-300 ${isSelected
-                          ? 'scale-110 ring-4 ring-brand-red animate-pulse'
-                          : 'scale-0 group-hover/hotspot:scale-100 group-hover/hotspot:ring-2 group-hover/hotspot:ring-white/60'
+                        ? 'scale-110 ring-4 ring-brand-red animate-pulse'
+                        : 'scale-0 group-hover/hotspot:scale-100 group-hover/hotspot:ring-2 group-hover/hotspot:ring-white/60'
                         }`} />
 
                       {/* Glassmorphic plate marker tag */}
                       <div className={`w-8 h-8 rounded-full flex items-center justify-center border-2 shadow-lg transition-all duration-300 ${isSelected
-                          ? 'bg-brand-red border-white text-white scale-110 shadow-brand-red/40'
-                          : 'bg-[#1A1A1A]/85 border-[#EBE3D5] text-white hover:bg-brand-red hover:border-white'
+                        ? 'bg-brand-red border-white text-white scale-110 shadow-brand-red/40'
+                        : 'bg-[#1A1A1A]/85 border-[#EBE3D5] text-white hover:bg-brand-red hover:border-white'
                         }`}>
                         <span className="text-[9px] font-black uppercase font-mono tracking-tighter">
                           {hotspot.id === 'bhat' ? 'Rice' : hotspot.name.charAt(0)}
