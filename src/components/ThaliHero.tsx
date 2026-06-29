@@ -281,10 +281,10 @@ export default function ThaliHero() {
               >
                 {/* 100% REAL AND BEAUTIFUL NEPALESE THAKALI THALI PLATE WITH NO TABLE BACKGROUND (MATCHING USER'S PHOTO PERFECTLY) */}
                 <img
-                  src="/plate.png"
+                  src="/plate.webp"
                   alt="Authentic Nepalese Thakali Thali Plate"
                   referrerPolicy="no-referrer"
-                  className="w-full h-full object-contain drop-shadow-2xl select-none"
+                  className="w-full h-full object-contain drop-shadow-2xl select-none scale-200"
                 />
 
                 {/* INTERACTIVE HOTSPOT OVERLAYS */}
